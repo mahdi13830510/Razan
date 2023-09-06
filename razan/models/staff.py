@@ -8,6 +8,7 @@ class Staff(models.Model):
     date_of_birth = models.DateField()
     role = models.CharField(max_length=50, choices=Univercity_ROLE)
     phone_number = models.CharField(max_length=15)
+    profile = models.ImageField(upload_to='profiles/', blank=True)
     
     class Meta:
         abstract = True
