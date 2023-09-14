@@ -1,0 +1,98 @@
+
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: #37B9F1;
+    inherits: false;
+  }
+  
+  @property --myColor2 {
+    syntax: '<color>';
+    initial-value: #8739F9;
+    inherits: false;
+  }
+.part1
+{
+    content: '';
+    position: relative;
+    /* position: absolute;
+    top: 30px;
+    right: 25%; */
+    margin: 10px auto;
+    margin-top: 50px;
+    height: 40px ;
+    width: 40px;
+    border-radius: 10px;
+    /* background-color: #8739F9; */
+    background: linear-gradient(45deg, var(--myColor1), var(--myColor2));
+    transition: all 1s;
+    /* width: 50%; */
+}
+
+.part1.active
+{
+    width: 50%;
+    
+}
+
+.part1-icon
+{
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 20px);
+    color: white;
+    font-size: 2rem;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.part1.active .part1-icon
+{
+
+    top: -20px;
+    left: calc(50% - 20px);
+    background: linear-gradient(45deg, var(--myColor1), var(--myColor2));
+    /* border-radius: 50%; */
+    border-radius: 10px;
+}
+
+
+.part1 ul
+{
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+.part1.active ul 
+{
+    display: flex;
+    opacity: 0;
+    animation: li-sh 1.5s forwards;
+}
+
+@keyframes li-sh 
+{
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+.part1 ul li 
+{
+    list-style: none;
+}
+
+.part1 ul li a 
+{
+    text-decoration: none;
+    color: white;
+}

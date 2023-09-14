@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'images/mortarboard.png'%}" type="image/x-icon">
+    <title>سامانه رازان</title>
+
+
+    <!-- script -->
+    <script src="{% static 'js/available_units/app.js'%}" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+    <!-- script -->
+
+    <!-- style -->
+    <link rel="stylesheet" href="{% static 'css/available_units/main.css'%}">
+    <link rel="stylesheet" href="{% static 'css/available_units/menu.css'%}">
+    <link rel="stylesheet" href="{% static 'css/available_units/nav-responsive.css'%}">
+    <link rel="stylesheet" href="{% static 'css/available_units/section-1.css'%}">
+    <link rel="stylesheet" href="{% static 'css/available_units/section-2.css'%}">
+    <!-- style -->
+
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <div class="menu active">
+            <div class="main-title">
+                <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+                <span class="main-title-sub">سامانه رازان</span>
+            </div>
+            <ul>
+                <li class="list">
+                    <b class="rom1"></b>
+                    <b class="rom2"></b>
+                    <a href="../4-main-panel/index.html" title="پنل">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">پنل دانشجو</span>
+                    </a>
+                </li>
+                
+                <li class="list">
+                    <b class="rom1"></b>
+                    <b class="rom2"></b>
+                    <a href="../8-intkhab-vahed/index.html" title="انتخاب واحد">
+                        <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+                        <span class="title">انتخاب واحد</span>
+                    </a>
+                </li>
+        
+                    <li class="list">
+                    <b class="rom1"></b>
+                    <b class="rom2"></b>
+                    <a href="../5-grid-panel/index.html" title="کارنامه">
+                        <span class="icon"><ion-icon name="browsers-outline"></ion-icon></span>
+                        <span class="title">کارنامه</span>
+                    </a>
+                </li>
+        
+                <li class="list active">
+                    <b class="rom1"></b>
+                    <b class="rom2"></b>
+                    <a href="index.html" title="دروس دانشجو">
+                        <span class="icon"><ion-icon name="document-outline"></ion-icon></span>
+                        <span class="title">دروس دانشجو در نیمسال</span>
+                    </a>
+                </li>
+                
+                <li class="list">
+                    <b class="rom1"></b>
+                    <b class="rom2"></b>
+                    <a href="../9-drous-intkhab/index.html" title="دروس ارائه شده">
+                        <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
+                        <span class="title">دروس ارائه شده در نیمسال</span>
+                    </a>
+                </li>
+        
+                <li class="list">
+                    <b class="rom1"></b>
+                    <b class="rom2"></b>
+                    <a href="../7-change-password/index.html" title="تغییر کلمه عبور">
+                        <span class="icon"><ion-icon name="shield-checkmark-outline"></ion-icon></span>
+                        <span class="title">تغییر کلمه عبور</span>
+                    </a>
+                </li>
+        
+                <li class="list">
+                    <b class="rom1"></b>
+                    <b class="rom2"></b>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">خروج</span>
+                    </a>
+                </li>
+        
+            </ul>    
+        </div>
+
+        <div class="menu1">
+            <ul>
+                <li class="list1">
+                    <a href="../4-main-panel/index.html">
+                        <span class="icon1"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title1">پنل دانشجو</span>
+                    </a>
+                </li>
+        
+                <li class="list1">
+                    <a href="../8-intkhab-vahed/index.html">
+                        <span class="icon1"><ion-icon name="school-outline"></ion-icon></span>
+                        <span class="title1">انتخاب واحد</span>
+                    </a>
+                </li>
+        
+                <li class="list1">
+                    <a href="../5-grid-panel/index.html">
+                        <span class="icon1"><ion-icon name="browsers-outline"></ion-icon></span>
+                        <span class="title1">کارنامه</span>
+                    </a>
+                </li>
+        
+                <li class="list1 active">
+                    <a href="index.html">
+                        <span class="icon1"><ion-icon name="document-outline"></ion-icon></span>
+                        <span class="title1"> دروس دانشجو</span>
+                    </a>
+                </li>
+        
+                <li class="list1">
+                    <a href="../9-drous-intkhab/index.html">
+                        <span class="icon1"><ion-icon name="newspaper-outline"></ion-icon></span>
+                        <span class="title1">دروس ارائه شده </span>
+                    </a>
+                </li>
+        
+                <li class="list1">
+                    <a href="../7-change-password/index.html">
+                        <span class="icon1"><ion-icon name="shield-checkmark-outline"></ion-icon></span>
+                        <span class="title1">تغییر کلمه عبور</span>
+                    </a>
+                </li>
+        
+                <li class="list1">
+                    <a href="#">
+                        <span class="icon1"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title1">خروج</span>
+                    </a>
+                </li>
+                <div class="back-grand"></div>
+            </ul>
+        </div>
+
+<!-- ------------------- -->
+
+        <div class="main-side active">
+
+            <div class="section-1">
+                <div class="up"><h2>حضور و غیاب دانشجو</h2></div>
+
+                <div class="down-side">
+                    <div>
+                        <span>برنامه نویسی</span>
+                        <span>
+                            <span>0</span>
+                            <span>غیبت</span>
+                        </span>
+                    </div>
+                    <div>
+                        <span>فیزیک 2</span>
+                        <span>
+                            <span>2</span>
+                            <span>غیبت</span>
+                        </span>
+                    </div>
+                    <div>
+                        <span>ریاضی 2</span>
+                        <span>
+                            <span>5</span>
+                            <span>غیبت</span>
+                        </span>
+                    </div>
+                    <div>
+                        <span>ریاضی 2</span>
+                        <span>
+                            <span>5</span>
+                            <span>غیبت</span>
+                        </span>
+                    </div>
+                    <div>
+                        <span>ریاضی 2</span>
+                        <span>
+                            <span>5</span>
+                            <span>غیبت</span>
+                        </span>
+                    </div>
+                    <div>
+                        <span>ریاضی 2</span>
+                        <span>
+                            <span>5</span>
+                            <span>غیبت</span>
+                        </span>
+                    </div>
+                    <div>
+                        <span>ریاضی 2</span>
+                        <span>
+                            <span>5</span>
+                            <span>غیبت</span>
+                        </span>
+                    </div>
+                    <div>
+                        <span>فیزیک 2</span>
+                        <span>
+                            <span>5</span>
+                            <span>غیبت</span>
+                        </span>
+                    </div>
+                    <div>
+                        <span>گارکاه برنامه نویسی</span>
+                        <span>
+                            <span>5</span>
+                            <span>غیبت</span>
+                        </span>
+                    </div>
+                    <div>
+                        <span>زبان انگلیسی</span>
+                        <span>
+                            <span>5</span>
+                            <span>غیبت</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-2">
+                <div class="up">
+                    <h2>برنامه دانشجو</h2>
+                </div>
+                <div class="down-side">
+                    <table>
+                        <thead>
+                        <tr>
+                          <th></th>
+                          <th>8-10</th>
+                          <th>10-12</th>
+                          <th>14-16</th>
+                          <th>16-18</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <th>شنبه</th>
+                          <td>
+                            <div class="mohtava">
+                                <span>برنامه نویسی </span>
+                                <span>استاد تنها </span>
+                                <span>کلاس 248 </span>
+                          </div>
+                          
+                        </td>
+                          <td><div class="mohtava">
+                            <span>برنامه نویسی</span>
+                            <span>استاد تنها</span>
+                            <span>کلاس 248</span>
+                          </div></td>
+                          <td><div class="mohtava">
+                            <span>برنامه نویسی</span>
+                            <span>استاد تنها</span>
+                            <span>کلاس 248</span>
+                          </div></td>
+                          <td><div class="mohtava">
+                            <span>برنامه نویسی</span>
+                            <span>استاد تنها</span>
+                            <span>کلاس 248</span>
+                          </div></td>
+                        </tr>
+                        <tr>
+                            <th>یکشنبه</th>
+                            <td>
+                                <div class="mohtava">
+                                    <span>برنامه نویسی</span>
+                                <span>استاد تنها</span>
+                                <span>کلاس 248</span>
+                              </div>
+                            </td>
+                              <td><div class="mohtava">
+                                <span>برنامه نویسی</span>
+                                <span>استاد تنها</span>
+                                <span>کلاس 248</span>
+                              </div></td>
+                              <td><div class="mohtava">
+                                <span>برنامه نویسی</span>
+                                <span>استاد تنها</span>
+                                <span>کلاس 248</span>
+                              </div></td>
+                              <td><div class="mohtava">
+                                <span>برنامه نویسی</span>
+                                <span>استاد تنها</span>
+                                <span>کلاس 248</span>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <th>دوشنبه</th>
+                            <td>
+                                <div class="mohtava">
+                                    <span>برنامه نویسی</span>
+                                <span>استاد تنها</span>
+                                <span>کلاس 248</span>
+                              </div>
+                            </td>
+                              <td>
+                                <div class="mohtava">
+                                <span>برنامه نویسی</span>
+                                <span>استاد تنها</span>
+                                <span>کلاس 248</span>
+                              </div>
+                              
+                            </td>
+                              <td><div class="mohtava">
+                                <span>برنامه نویسی</span>
+                                <span>استاد تنها</span>
+                                <span>کلاس 248</span>
+                              </div></td>
+                              <td><div class="mohtava">
+                                <span>برنامه نویسی</span>
+                                <span>استاد تنها</span>
+                                <span>کلاس 248</span>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <th>سه شنبه</th>
+                            <td>
+                                <div class="mohtava">
+                                    <span>برنامه نویسی</span>
+                                <span>استاد تنها</span>
+                                <span>کلاس 248</span>
+                              </div>
+                            </td>
+                              <td><div class="mohtava">
+                                <span>برنامه نویسی</span>
+                                <span>استاد تنها</span>
+                                <span>کلاس 248</span>
+                              </div></td>
+                              <td><div class="mohtava">
+                                <span>برنامه نویسی</span>
+                                <span>استاد تنها</span>
+                                <span>کلاس 248</span>
+                              </div></td>
+                              <td><div class="mohtava">
+                                <span>برنامه نویسی</span>
+                                <span>استاد تنها</span>
+                                <span>کلاس 248</span>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <th>چهارشنبه</th>
+                            <td>
+                                <div class="mohtava">
+                                    <span>برنامه نویسی</span>
+                                <span>استاد تنها</span>
+                                <span>کلاس 248</span>
+                              </div>
+                            </td>
+                              <td><div class="mohtava">
+                                <span>برنامه نویسی</span>
+                                <span>استاد تنها</span>
+                                <span>کلاس 248</span>
+                              </div></td>
+                              <td>
+                                <div class="mohtava">
+                                <span>برنامه نویسی</span>
+                                <span>استاد سخندان</span>
+                                <span>کلاس 248</span>
+                              </div>
+                              
+                            </td>
+                              <td>
+                                <div class="mohtava">
+                                <span>برنامه نویسی</span>
+                                <span>استاد تنها</span>
+                                <span>کلاس 248</span>
+                              </div>
+                              
+                            </td>
+                          </tr>
+                    </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

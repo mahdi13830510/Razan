@@ -1,0 +1,72 @@
+
+
+.part2 
+{
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    width: 80%;
+    height: 50%;
+    background-color: #efe6f8;
+    
+}
+
+
+.part2 .up-section
+{
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient(45deg,#37b1f9, #8739F9);
+}
+
+.part2 .down-section
+{
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    height: 85%;
+    overflow-y: auto;
+    /* background-color: cornflowerblue; */
+}
+
+.part2 .down-section table
+{
+    width: 100%;
+}
+
+.part2 .down-section thead th
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    color: #F2F5F4;
+    text-shadow: 0px 0px 1px #F2F5F4;
+    background-color: rgba(47, 19, 228, 0.412);
+}
+
+.part2 .down-section tbody th 
+{
+    /* font-size: 0.7rem; */
+    font-weight: 200;
+    padding: 5px;
+}
+
+.part2 .down-section tbody tr:nth-child(odd) 
+{
+    background-color: rgb(209, 205, 205);
+}
+.main-part,.part2{
+    border-radius: 20px;
+    overflow: hidden;
+}
+.main-part .up-section{
+    color: white;
+}
+.main-part .down-section{
+    overflow-y: auto;
+}

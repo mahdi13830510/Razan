@@ -1,0 +1,82 @@
+/* *{
+  overflow: hidden;
+} */
+
+.info-section
+{
+    content: '';
+    position: absolute;
+    height: 27%;
+    width: 90%;
+    top: 17%;
+    left: 4%;
+    border-radius: 20px;
+    /* box-shadow: 1px 1px 15px #37B9F1; */
+    transform: translateY(30px);
+    animation: showing 2s 5s forwards;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    border: 3px solid #37B9F1;
+    border-top: none;
+    /* opacity: 0;
+    box-shadow: 1px 1px 10px #37B9F1; */
+  }
+  
+  
+  @property --myColor1 {
+    syntax: '<color>';
+    initial-value: #37B9F1;
+    inherits: false;
+  }
+  
+  @property --myColor2 {
+    syntax: '<color>';
+    initial-value: #8739F9;
+    inherits: false;
+  }
+  .info-section .up{
+    overflow: hidden;
+    /* background: -webkit-linear-gradient(45deg, #8739F9  , #37B9F1  );   */
+    background: linear-gradient(45deg, var(--myColor1), var(--myColor2));
+    transition: --myColor1 1.5s, --myColor2 1.5s;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+  }
+  .info-section:hover .up{
+    --myColor1: #8739F9;
+    --myColor2: #37B9F1;
+  }
+  .up h2{
+    color: #F2F5F4;
+    text-shadow: 0px 0px 2px #F2F5F4;
+    padding: 18px;
+    font-size: 1.22rem;
+    text-align: center;
+  }
+  .down{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    width: 100%;
+    height: 80%;
+  }
+
+  .down div 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 21px; */
+    font-size: 1.1rem;
+  }
+
+  .down label{
+    color: #257699;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px #257699;
+  }
+  .down span{
+    /* margin-right: 35px; */
+    color: #2084af;
+  }

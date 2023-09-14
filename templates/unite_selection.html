@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head> 
+    {%load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'images/mortarboard.png'%}" type="image/x-icon">
+    <title>سامانه رازان</title>
+
+    <!-- script -->
+    <script src="{% static 'js/unite_selection/app.js'%}" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+    <!-- script -->
+
+    <!-- style -->
+    <link rel="stylesheet" href="{% static 'css/unite_selection/main.css'%}">
+    <link rel="stylesheet" href="{% static 'css/unite_selection/menu.css'%}">
+    <link rel="stylesheet" href="{% static 'css/unite_selection/nav-responsive.css'%}">
+    <link rel="stylesheet" href="{% static 'css/unite_selection/part1.css'%}">
+    <link rel="stylesheet" href="{% static 'css/unite_selection/part2.css'%}">
+    <link rel="stylesheet" href="{% static 'css/unite_selection/part3.css'%}">
+    <!-- style -->
+
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <div class="menu active">
+            <div class="main-title">
+                <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+                <span class="main-title-sub">سامانه رازان</span>
+            </div>
+            <ul>
+                <li class="list">
+                    <b class="rom1"></b>
+                    <b class="rom2"></b>
+                    <a href="../4-main-panel/index.html" title="پنل">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">پنل دانشجو</span>
+                    </a>
+                </li>
+                
+                <li class="list active">
+                    <b class="rom1"></b>
+                    <b class="rom2"></b>
+                    <a href="index.html" title="انتخاب واحد">
+                        <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+                        <span class="title">انتخاب واحد</span>
+                    </a>
+                </li>
+        
+                    <li class="list">
+                    <b class="rom1"></b>
+                    <b class="rom2"></b>
+                    <a href="../5-grid-panel/index.html" title="کارنامه">
+                        <span class="icon"><ion-icon name="browsers-outline"></ion-icon></span>
+                        <span class="title">کارنامه</span>
+                    </a>
+                </li>
+        
+                <li class="list">
+                    <b class="rom1"></b>
+                    <b class="rom2"></b>
+                    <a href="../6-availabel-lesson/index.html" title="دروس دانشجو">
+                        <span class="icon"><ion-icon name="document-outline"></ion-icon></span>
+                        <span class="title">دروس دانشجو در نیمسال</span>
+                    </a>
+                </li>
+                
+                <li class="list">
+                    <b class="rom1"></b>
+                    <b class="rom2"></b>
+                    <a href="../9-drous-intkhab/index.html" title="دروس ارائه شده">
+                        <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
+                        <span class="title">دروس ارائه شده در نیمسال</span>
+                    </a>
+                </li>
+        
+                <li class="list">
+                    <b class="rom1"></b>
+                    <b class="rom2"></b>
+                    <a href="../7-change-password/index.html" title="تغییر کلمه عبور">
+                        <span class="icon"><ion-icon name="shield-checkmark-outline"></ion-icon></span>
+                        <span class="title">تغییر کلمه عبور</span>
+                    </a>
+                </li>
+        
+                <li class="list">
+                    <b class="rom1"></b>
+                    <b class="rom2"></b>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">خروج</span>
+                    </a>
+                </li>
+        
+            </ul>    
+        </div>
+
+        <div class="menu1">
+            <ul>
+                <li class="list1">
+                    <a href="../4-main-panel/index.html">
+                        <span class="icon1"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title1">پنل دانشجو</span>
+                    </a>
+                </li>
+        
+                <li class="list1 active">
+                    <a href="index.html">
+                        <span class="icon1"><ion-icon name="school-outline"></ion-icon></span>
+                        <span class="title1">انتخاب واحد</span>
+                    </a>
+                </li>
+        
+                <li class="list1">
+                    <a href="../5-grid-panel/index.html">
+                        <span class="icon1"><ion-icon name="browsers-outline"></ion-icon></span>
+                        <span class="title1">کارنامه</span>
+                    </a>
+                </li>
+        
+                <li class="list1">
+                    <a href="../6-availabel-lesson/index.html">
+                        <span class="icon1"><ion-icon name="document-outline"></ion-icon></span>
+                        <span class="title1"> دروس دانشجو</span>
+                    </a>
+                </li>
+        
+                <li class="list1">
+                    <a href="../9-drous-intkhab/index.html">
+                        <span class="icon1"><ion-icon name="newspaper-outline"></ion-icon></span>
+                        <span class="title1">دروس ارائه شده </span>
+                    </a>
+                </li>
+        
+                <li class="list1">
+                    <a href="../7-change-password/index.html">
+                        <span class="icon1"><ion-icon name="shield-checkmark-outline"></ion-icon></span>
+                        <span class="title1">تغییر کلمه عبور</span>
+                    </a>
+                </li>
+        
+                <li class="list1">
+                    <a href="#">
+                        <span class="icon1"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title1">خروج</span>
+                    </a>
+                </li>
+                <div class="back-grand"></div>
+            </ul>
+        </div>
+
+<!-- ------------------- -->
+
+        <div class=" main-side active ">
+
+            <div class="part1">
+                <div class="group serch-box">
+                    <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+                    <input placeholder="جستجو کنید .." type="search" id="searchInput" onkeyup="search()" class="inputt">
+                  </div>
+                <!-- <div class="serch-box"><input  id="searchInput" onkeyup="search()" ></div> -->
+                <div class="sort-box">
+                    <select name="" id="selec-sort-box" onchange="sortTable(this)">
+                        <option value="1">نام درس</option>
+                        <option value="2">نام استاد</option>
+                    </select>
+                </div>
+                <div class="main-part">
+                    <div class="up-section">
+                        <h2>دروس موجود</h2>
+                    </div>
+                    <div class="down-section">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>کد درس</th>
+                                    <th>نام درس</th>
+                                    <th>نام استاد</th>
+                                    <th>کد گروه</th>
+                                    <th>ظرفیت</th>
+                                    <th>انتخاب</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabelBody">
+                                <tr class="tr">
+                                    <th>5000125</th>
+                                    <th>B</th>
+                                    <th>تنها</th>
+                                    <th>2</th>
+                                    <th><span class="zarfiatClass" >20</span>/<span class="zarfiatpor" >5</span></th>
+                                    <th>
+                                        <input type="checkbox" class="input" value="0">
+                                    </th>
+                                </tr>
+                                <tr class="tr">
+                                    <th>5000121</th>
+                                    <th>program</th>
+                                    <th>آسخندان</th>
+                                    <th>2</th>
+                                    <th>20/15</th>
+                                    <th>
+                                        <input type="checkbox" class="input" value="1">
+                                    </th>
+                                </tr>
+                                <tr class="tr">
+                                    <th>5000120</th>
+                                    <th>CAK</th>
+                                    <th>سیروس خرم</th>
+                                    <th>2</th>
+                                    <th>40/23</th>
+                                    <th>
+                                        <input type="checkbox" class="input" value="2" >
+                                    </th>
+                                </tr>
+                                <tr class="tr">
+                                    <th>5000120</th>
+                                    <th>KLAF</th>
+                                    <th>فریبا</th>
+                                    <th>1</th>
+                                    <th>40/19</th>
+                                    <th>
+                                        <input type="checkbox" class="input" value="3">
+                                    </th>
+                                </tr>
+                                <tr class="tr">
+                                    <th>5000120</th>
+                                    <th>MFGHJ</th>
+                                    <th>مهرداد لکستانی</th>
+                                    <th>2</th>
+                                    <th>40/36</th>
+                                    <th>
+                                        <input type="checkbox" class="input" value="4" >
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="part2">
+                <div class="up-section">
+                    <h2>
+                        دروس انتخابی
+                    </h2>
+                </div>
+                <div class="down-section">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>کد درس</th>
+                                <th>نام درس</th>
+                                <th>نام استاد</th>
+                                <th>کد گروه</th>
+                                <th>ظرفیت</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tabelBody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="part3">
+                <button class="button" id="submitBtn">
+                    ثبت نهایی
+                    <div class="hoverEffect">
+                    <div>
+                    </div>
+                    </div>
+                </button>
+            </div>
+
+        </div>
+    
+</div>
+
+</body>
+</html>

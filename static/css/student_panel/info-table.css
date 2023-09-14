@@ -1,0 +1,74 @@
+
+:root
+{
+    --color-white:#F2F5F4;
+    --color-blue:#37b9f1bf;
+    --color-perple:#8639f994;
+}
+
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: #37B9F1;
+    inherits: false;
+  }
+  
+  @property --myColor2 {
+    syntax: '<color>';
+    initial-value: #8739F9;
+    inherits: false;
+  }
+.info-tabel-1
+{
+    background-image: url(src/photo_2023-06-25_16-11-22.jpg);
+    content: '';
+    position: absolute;
+    height: 40%;
+    width: 43%;
+    bottom: 30px;
+    left: 4%;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba(255, 255, 255, 0.2); */
+    /* backdrop-filter: blur(50px); */
+    /* border:solid 3px #37B9F1; */
+    /* background: linear-gradient(45deg, #37B9F1,#8739F9); */
+    /* box-shadow: 1px 1px 10px #37B9F1; */
+    /* opacity: 0;
+    transform: translateY(80px);
+    animation: showing 2s 6s forwards; */
+}
+
+#myChart
+{
+    transform: scale(1.8);
+    /* display: none; */
+}
+
+.info-tabel-2
+{
+    background-image: url(src/photo_2023-06-25_16-11-22.jpg);
+    content: '';
+    position: absolute;
+    height: 40%;
+    width: 43%;
+    bottom: 30px;
+    right: 5.7%;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:solid 3px #37B9F1; */
+    /* box-shadow: 1px 1px 10px #37B9F1; */
+    /* opacity: 0;
+    transform: translateY(80px);
+    animation: showing 2s 6s forwards; */
+}
+
+#myChart1
+{
+    transform: scale(1.8);
+}

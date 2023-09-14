@@ -1,0 +1,250 @@
+
+  html{
+    height: 100%;
+  }
+  body{
+    background-image: url(src/Mass\ Circles.svg);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
+    /* flex-direction: column; */
+  }
+  *{
+    margin: 0px;
+    direction: rtl;
+    font-family: 'iranyekan';
+    padding: 0px;
+    box-sizing: border-box;
+    border: 0;
+    /* overflow: hidden; */
+  }
+  .notif{
+    overflow: hidden;
+    background-color: white;
+    width: 50%;
+    min-height: 68%;
+    /* margin-top: 5%; */
+    /* margin-right: 30px; */
+    /* height: 300px; */
+    box-shadow: 0px 0px 30px #37B9F1;
+    border-radius: 20px;
+    border: solid 3px #37B9F1;
+    border-top: none;
+    transition: all 0.6s ease-in-out;
+    /* margin-top: 60px; */
+    animation: form-anim 1.5s ease-in-out forwards;
+  }
+
+  @property --myColor1 {
+    syntax: '<color>';
+    initial-value: #37B9F1;
+    inherits: false;
+  }
+  
+  @property --myColor2 {
+    syntax: '<color>';
+    initial-value: #8739F9;
+    inherits: false;
+  }
+  .up{
+    background: -webkit-linear-gradient(45deg, #8739F9  , #37B9F1  );  
+    background: linear-gradient(45deg, var(--myColor1), var(--myColor2));
+    transition: --myColor1 1.5s, --myColor2 1.5s;
+  }
+  .notif:hover .up{
+    --myColor1: #8739F9;
+    --myColor2: #37B9F1;
+  }
+  .up h2{
+    color: #F2F5F4;
+    text-shadow: 0px 0px 2px #F2F5F4;
+    padding: 18px;
+    font-size: 28px;
+    text-align: center;
+  }
+  .down{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    /* padding: 30px; */
+  }
+  .down form{
+    /* border:solid 3px #8739F9; */
+    /* margin-top: 4%; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 50px;
+    width: 100%;
+    /* height: 350px; */
+    
+    animation: payam-anim 0.9s ease-in;
+  }
+  #message{
+    resize: none;
+    border: solid 1px #ddd;
+    border-radius: 10px;
+    outline: none;
+    padding: 15px;
+    caret-color: #257699;
+    color: #257699;
+    font-size: 17px;
+  }
+  #message:active{
+    box-shadow: 0px 0px 10px #37B9F1 inset;
+  }
+  span{
+    color: #257699;
+    text-shadow: 0px 0px 1px #257699;
+    font-size: 18px;
+  }
+  .button {
+    /* width: 150px; */
+    height: 60px;
+    border: 3px solid #37B9F1;
+    border-radius: 45px;
+    color: #37B9F1;
+    text-shadow: 0px 0px 1px #257699;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1.3em;
+    font-weight: 550;
+  }
+  
+  .button:hover {
+    background: #37B9F1;
+    color: white;
+    font-size: 1.6em;
+  }
+
+
+  @keyframes form-anim {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes payam-anim {
+    0% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    50%{
+        opacity: 0.2;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+
+  /*////////////////mobile/////////////////////*/
+
+
+  @media(max-width:470px){
+    .notif{
+        animation: notif-anim 2s ease-in-out forwards;
+        width: 80%;
+        min-height: 70%;
+        transition: none;
+        border: solid 2px #37B9F1;
+    }
+    .up h2{
+        color: #F2F5F4;
+        text-shadow: 0px 0px 2px #F2F5F4;
+        padding: 15px;
+        font-size: 18px;
+        text-align: center;
+      }
+      
+      .down form{
+        
+        width: 100%;
+        height: 500px;
+        animation: paya-anim 1s ease-in;
+      }
+      #message{
+        resize: none;
+        border: solid 1px #ddd;
+        border-radius: 10px;
+        outline: none;
+        padding: 10px;
+        caret-color: #257699;
+        color: #257699;
+        font-size: 10px;
+        height: 85%;
+      }
+      #message:active{
+        box-shadow: 0px 0px 5px #37B9F1 inset;
+      }
+      span{
+        color: #257699;
+        text-shadow: 0px 0px 1px #257699;
+        font-size: 10.5px;
+      }
+      .button {
+        /* width: 150px; */
+        height: 40px;
+        border: 3px solid #37B9F1;
+        border-radius: 45px;
+        color: #37B9F1;
+        text-shadow: 0px 0px 1px #257699;
+        transition: all 0.3s;
+        cursor: pointer;
+        background: white;
+        font-size: 0.9em;
+        font-weight: 550;
+      }
+      
+      .button:hover {
+        background: #37B9F1;
+        color: white;
+        font-size: 1.2em;
+        transform: scale(1.05);
+      }
+      
+
+
+
+
+
+      @keyframes paya-anim {
+        0% {
+          transform: translateY(10px);
+          opacity: 0;
+        }
+        50%{
+            opacity: 0.2;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+
+
+    @keyframes notif-anim {
+        0% {
+          transform: translateY(10px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+  }

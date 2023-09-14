@@ -1,0 +1,86 @@
+
+
+@font-face {
+    font-family: iranyekan;
+    src: url('src/4_5940377599334157489.ttf') format('truetype');
+  }
+  
+  *{
+    margin: 0px;
+    padding: 0px;
+    direction: rtl;
+    font-family: iranyekan;
+    box-sizing: border-box;
+    border: 0;
+    /* overflow: hidden; */
+  }
+  
+  :root
+  {
+      --color-white:#08e175;
+      --color-blue:#37B9F1;
+      --color-perple:#8739F9;
+  }
+  body
+  {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container
+  {
+    position: relative;
+    width: 98%;
+    height: 98%;
+    display: flex; 
+    /* justify-content: center;
+    align-items: center; */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px #37B9F1;
+    overflow: hidden;
+    /* animation: start 2s  forwards , width 3s 2.3s forwards; */
+  }
+
+  .main-side
+  {
+    /* display: none; */
+    width: 84%;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    transition: width .5s;
+    z-index: 10;
+    overflow: auto;
+
+  }
+
+  .main-side.active 
+  {
+    width: 97%;
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #c9c9c9;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a6a6a6;
+  }
+
+

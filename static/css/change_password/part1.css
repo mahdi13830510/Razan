@@ -1,0 +1,138 @@
+
+.main-side
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.up-side{
+    width: 75%;
+    border: solid 3px #37B9F1;
+    border-radius: 15px;
+    /* box-shadow: 0px 0px 5px #37B9F1; */
+
+}
+textarea{
+    resize:none;
+    outline: none;
+    border:solid 1px #ddd;
+    border-radius: 10px;
+    padding: 13px;
+    caret-color: #257699;
+    color: #257699;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   }
+   form{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: start; */
+    justify-content: center;
+   }
+   form label{
+    color: #257699;
+    text-shadow: 0px 0px 1px #257699;
+    font-size: 1rem;
+   }
+   /*dddd*/
+   /* inspired form gumroad website */
+.button {
+    --bg: #484848;
+    --hover-bg: #37B9F1;
+    --hover-text: #484848;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.6em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+    font-size: 1rem;
+  }
+  
+  .button:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem,-0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+  }
+  
+  .button:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
+  .mm{
+    width: 75%;
+    margin-right: 6.5%;
+    height: 1px;
+    background-color: #ddd;
+  }
+  /*   scss        */
+  .inputGroup {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 1em 0 1em 0;
+    max-width: 100%;
+    position: relative;
+  }
+  
+  .inputGroup input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid #ddd;
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+    direction: ltr;
+    color: #257699;
+    caret-color: #257699;
+  }
+  
+  .inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: #257699;
+  }
+  
+  .inputGroup :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: rgb(231, 228, 228);
+  }
+  
+  .inputGroup :is(input:focus, input:valid) {
+    border-color: #37B9F1;
+  }
+  .down-side{
+    width: 75%;
+    border: solid 3px #37B9F1;
+    border-radius: 15px;
+    /* box-shadow: 0px 0px 5px #37B9F1; */
+  }
+  .down-side form{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  /* .mass{
+    position: relative;
+    right: 40%;
+  } */
+
+  .down-side
+  {
+    filter: blur(5px);
+    pointer-events: none;
+  }

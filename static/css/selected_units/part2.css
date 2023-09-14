@@ -1,0 +1,28 @@
+.part2{
+    width: 80%;
+    height: 67.2%;
+    border: 3px solid #37B9F1;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+    
+}
+.gesmat{
+    display: flex;
+    flex-direction: row;
+    /* align-content: space-between; */
+    justify-content: space-around;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+    padding: 20px 0px;
+    color: #257699;
+}

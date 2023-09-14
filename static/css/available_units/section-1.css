@@ -1,0 +1,87 @@
+
+.main-side
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section-1
+{
+    content: '';
+    width: 75%;
+    height: 35%;
+    overflow: hidden;
+    border: 3px solid #37B9F1;
+    border-top: none;
+    border-radius: 20px;
+    /* box-shadow: 0px 0px 5px #37B9F1; */
+}
+
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: #37B9F1;
+    inherits: false;
+  }
+  
+  @property --myColor2 {
+    syntax: '<color>';
+    initial-value: #8739F9;
+    inherits: false;
+  }
+  .up{
+    height: 20%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, var(--myColor1), var(--myColor2));
+    transition: --myColor1 1.5s, --myColor2 1.5s;
+  }
+  .section-1:hover .up{
+    --myColor1: #8739F9;
+    --myColor2: #37B9F1;
+  }
+  .up h2{
+    color: #F2F5F4;
+    text-shadow: 0px 0px 2px #F2F5F4;
+    /* padding: 18px; */
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+.section-1 .down-side
+{
+    width: 100%;
+    height: 85%;
+    display: grid;
+    gap: 30px;
+    padding: 30px;
+    grid-template-columns: 1fr 1fr;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+
+.section-1 .down-side div 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    /* font-size: 1.5rem; */
+    /* border-bottom: 2px solid ;
+    box-shadow: 0 1px 5px ; */
+    border:solid 1px #ddd;
+    /* box-shadow: 0px 0px 5px #8d8484; */
+    border-radius: 15px;
+}
+
+.section-1 .down-side div span
+{
+    color: #257699;
+    width: 150px;
+    text-align: center;
+    font-size: 0.9rem;
+}
