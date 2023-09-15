@@ -1,0 +1,146 @@
+
+.section-2
+{
+    content: '';
+    background-color: white;
+    width: 75%;
+    height: 53%;
+    overflow: hidden;
+    /* padding: 10px; */
+    border: 3px solid #37B9F1;
+    border-top: none;
+    border-radius: 20px;
+    /* box-shadow: 0px 0px 5px #37B9F1; */
+}
+
+.section-2 .down-side
+{
+    position: relative;
+    width: 100%;
+    height: 85%;
+    /* background-color: rgba(11, 250, 11, 0.208); */
+    overflow-y: auto;
+    /* padding: 10px; */
+}
+.section-2 .up{
+  height: 15%;
+}
+table{
+  /* padding: 20px; */
+  /* border:solid 3px #37B9F1; */
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  font-size: 0.9rem;
+  /* border-collapse: ; */
+  /* box-shadow: 0px 0px 50px #37B9F1; */
+  /* animation: table-anim 4s ease-in-out forwards; */
+}
+th,td{
+  padding: 10px;
+  border: solid 1px #ddd;
+  border-radius: 10px;
+  /* color: #257699; */
+    /* text-shadow: 0px 0px 1px #257699; */
+}
+.mohtava{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* border: solid 0.5px #ddd; */
+  border-radius: 8px;
+  padding: 10px;
+  /* margin-top: 2px; */
+}
+th{
+  color: #257699;
+  text-shadow: 0px 0px 1px #257699;
+  /* padding: 15px ; */
+}
+
+
+td:hover{
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+.koll{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 15px 30px;
+  background-color: #212121;
+  border: none;
+  font: inherit;
+  color: #e8e8e8;
+  font-size: 15px;
+  height: 30px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button span {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.button::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  translate: 0 105%;
+  background-color: #F53844;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button svg {
+  width: 20px;
+  height: 20px;
+  fill: #F53844;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover {
+  animation: shake 0.2s linear 1;
+}
+
+.button:hover::before {
+  translate: 0 0;
+}
+
+.button:hover svg {
+  fill: #e8e8e8;
+}
+
+@keyframes shake {
+  0% {
+    rotate: 0deg;
+  }
+
+  33% {
+    rotate: 10deg;
+  }
+
+  66% {
+    rotate: -10deg;
+  }
+
+  100% {
+    rotate: 10deg;
+  }
+}

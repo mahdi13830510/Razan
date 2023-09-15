@@ -1,0 +1,95 @@
+
+
+.part2
+{
+    /* height: 70vh; */
+    max-height: 70vh;
+    min-height: 60vh;
+    margin: 20px auto;
+    width:90%;
+    border-radius: 20px;
+    overflow: auto;
+    /* z-index: 1; */
+    background-color: #fdf7ff;
+    border-left:2px solid #37B9F1 ;
+    border-bottom:2px solid #37B9F1 ;
+    border-right:2px solid #37B9F1 ;
+}
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: #37B9F1;
+    inherits: false;
+  }
+  
+  @property --myColor2 {
+    syntax: '<color>';
+    initial-value: #8739F9;
+    inherits: false;
+  }
+
+.part2 .up-side 
+{
+
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(45deg, #8739F9  , #37B9F1  );  
+    background: linear-gradient(45deg, var(--myColor1), var(--myColor2));
+    transition: --myColor1 1.5s, --myColor2 1.5s;
+}
+
+.part2:hover .up-side{
+    --myColor1: #8739F9;
+    --myColor2: #37B9F1;
+}
+
+.part2 .up-side h2 
+{
+    color: #F2F5F4;
+    text-shadow: 0px 0px 2px #F2F5F4;
+    padding: 18px;
+    /* font-size: 30px; */
+    text-align: center;
+}
+
+.part2 .down-side 
+{
+    width: 100%;
+    height: 90%;
+    /* background-color: red; */
+    padding-bottom: 150px;
+ 
+}
+
+.part2 table
+{
+    width: 100%;
+}
+
+.part2 thead th
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    color: #F2F5F4;
+    text-shadow: 0px 0px 1px #F2F5F4;
+    background-color: rgba(47, 19, 228, 0.412);
+}
+
+.part2 tbody th 
+{
+    /* font-size: 0.7rem; */
+    font-weight: 200;
+    padding: 5px;
+}
+
+.part2 tbody tr:nth-child(odd) 
+{
+    background-color: rgb(209, 205, 205);
+}
+img{
+    width: 35px;
+}
+

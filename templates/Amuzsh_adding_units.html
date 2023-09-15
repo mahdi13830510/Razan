@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سامانه رازان</title>
+    <link rel="stylesheet" href="{% static 'css/amuzsh_adding_units/afzodan-dars-styleOfAfzoodn.css'%}">
+    <script src="{% static 'js/amuzsh_adding_units/afzodan-dars-app.js'%}" defer ></script>
+</head>
+<body>
+    <div class="form">
+        <form>
+            <label>کد درس :</label>
+            <input class="input" type="number" required="required" name="codeDars">
+            <label>نام درس :</label>
+            <input class="input" type=" text" required="required" name="nameOfdars">
+            <label>نام استاد :</label>
+            <input class="input" type=" text" required="required" name="nameOfOstad">
+            <label>ظرفیت :</label>
+            <input  class="input" type="number" required="required" name="zarfiyat">
+            <label>شماره کلاس :</label>
+            <input  class="input" type="number" required="required" name="numberOfclass">
+    
+            <div class="ruz" id="mm"> روز کلاس :<br>
+                <label for="shanba">شنبه</label>
+                <input type="checkbox" name="shanba"  checked>
+                
+                <label for="yekshanbe">یکشنبه</label>
+                <input type="checkbox" name="yekshanbe" >
+                
+                <label for="doshanba">دوشنبه</label>
+                <input type="checkbox" name="doshanba" >
+
+                <label for="seshanba">سه شنبه</label>
+                <input type="checkbox" name="seshanba" >
+
+                <label for="chaharshanba">چهارشنبه</label>
+                <input type="checkbox" name="chaharshanba" >
+
+                
+                </div>
+                <div  class="ruz">ساعت کلاس :<br>
+                    <label for="8">8-10</label>
+                    <input type="checkbox" name="8"  checked>
+                    
+                    <label for="10">10-12</label>
+                    <input type="checkbox" name="10" >
+                    
+                    <label for="2">2-4</label>
+                    <input type="checkbox" name="2" >
+    
+                    <label for="4">4-6</label>
+                    <input type="checkbox" name="4" >
+    
+    
+                    
+                    </div>
+                    <div class="ruz"> نوع درس :<br>
+
+                        <label for="pish">پیش نیاز</label>
+                        <input type="checkbox" name="pish"  checked>
+                        
+                        <label for="hamniyaz">هم نیاز</label>
+                        <input type="checkbox" name="hamniyaz" >
+                        
+                        <label for="paye">پایه</label>
+                        <input type="checkbox" name="paye" >
+        
+                        
+                        </div>
+                        <label>کد درسی که برای آن پیشنیاز است :</label>
+                        <input class="input" type="number" required="required" name="codeDars2">
+
+                        <label>تعداد جلسه :</label>
+                        <input class="input" type="number" required="required" name="tedadJalasa">
+
+                        <input type="submit" class="button" value="ثبت">
+
+        </form>
+    </div>
+</body>
+</html>

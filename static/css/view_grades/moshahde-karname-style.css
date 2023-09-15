@@ -1,0 +1,13 @@
+
+*{
+ margin: 0px;
+direction: rtl;
+ font-family: 'iranyekan';
+ padding: 0px;
+ box-sizing: border-box;
+ border: 0;
+ /* overflow: hidden; */
+}
+body{
+    background-image: url(src/bbb.svg);
+}

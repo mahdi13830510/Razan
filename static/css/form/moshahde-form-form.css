@@ -1,0 +1,73 @@
+
+
+*{
+    margin: 0px;
+    direction: rtl;
+    font-family: 'iranyekan';
+    padding: 0px;
+    box-sizing: border-box;
+    border: 0;
+    overflow: hidden;
+  }
+  body{
+    background-image: url(src/Mass\ Circles.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+  h2{
+    text-align: center;
+    font-family: 'mix';
+  }
+.form
+{
+    margin-top: 6%;
+    height: 80vh;
+    width: 50vw;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid #37B9F1;
+    padding: 30px;
+    background-color: white;
+    /* transform: scale(0); */
+    /* transition: all 5s ease; */
+}
+
+
+
+.form.active
+{
+    display: block;
+    transform: scale(1);
+    transition: all 5s ease;
+}
+
+.form .info 
+{
+   
+    width: 100%;
+    height: 90%;
+    color: black;
+}
+
+.form .info .f1
+{
+    text-align: center;
+
+}
+
+.form .info span 
+{
+    font-size: 1.2rem;
+    color: black;
+    display: inline-block;
+    padding: 15px;
+    width: 100%;
+}
+
+.form .info span div
+{
+    display: inline;
+    font-weight: bold;
+}

@@ -1,0 +1,222 @@
+*{
+    
+    margin: 0px;
+    padding: 0px;
+    direction: rtl;
+    font-family: 'iranyekan';
+    box-sizing: border-box;
+    border: 0;
+    overflow: hidden;
+
+}
+html{
+    height: 100%;
+}
+body{
+    background-image: url(src/bbbb.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+height: 100%;
+}
+.notif{
+    overflow: hidden;
+    background-color: white;
+    width: 78%;
+    height: 80%;
+    /* margin-top: 8%; */
+    /* margin-right: 30px; */
+    /* height: 300px; */
+    
+    /* box-shadow: 0px 0px 30px #37B9F1; */
+    border-radius: 20px;
+    border: solid 3px #37B9F1;
+
+    border-top: none;
+    transition: all 0.6s ease-in-out;
+    /* margin-top: 60px; */
+    animation: form-anim 1.5s ease-in-out forwards;
+  }
+
+  @property --myColor1 {
+    syntax: '<color>';
+    initial-value: #37B9F1;
+    inherits: false;
+  }
+  
+  @property --myColor2 {
+    syntax: '<color>';
+    initial-value: #8739F9;
+    inherits: false;
+  }
+  .up{
+    background: -webkit-linear-gradient(45deg, #8739F9  , #37B9F1  );  
+    background: linear-gradient(45deg, var(--myColor1), var(--myColor2));
+    transition: --myColor1 1.5s, --myColor2 1.5s;
+  }
+  .notif:hover .up{
+    --myColor1: #8739F9;
+    --myColor2: #37B9F1;
+  }
+  .up h2{
+    color: #F2F5F4;
+    text-shadow: 0px 0px 2px #F2F5F4;
+    padding: 18px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .down{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    /* align-content: space-evenly; */
+    padding: 10px 30px;
+    height: 90%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+  .payam{
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    height: 100%;
+    /* box-shadow:  0px 0px 2px #37B9F1 ; */
+    animation: payam-anim 0.9s ease-in-out forwards;
+  }
+  .darxast{
+    font-size: 18px;
+    line-height: 34px;
+    color: #257699;
+    border: solid 2px #37B9F1;
+    padding: 20px;
+    border-radius: 20px;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+  }
+  h2{
+    font-size: 18px;
+    color: #257699;
+    text-shadow: 0px 0px 1px #257699;
+  }
+  h3{
+    font-size: 18px;
+    color: #257699;
+    text-shadow: 0px 0px 1px #257699;
+    margin: 10px 0px;
+  }
+  .xub {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.8rem 1.9rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    right: 2.2%;
+    width: 95%;
+    position: absolute;
+    bottom: 17%;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #66ff66;
+    color: ghostwhite;
+   }
+   
+   .xub span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+   }
+   
+   .xub:hover span {
+    color: black;
+   }
+   
+   .xub::before,
+   .xub::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   }
+   
+   .xub::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   
+   .xub:hover::before {
+    transform: translate3d(100%, 0, 0);
+   }
+   .bad{
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.75rem 1.9rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    right: 2.2%;
+    width: 95%;
+    position: absolute;
+    bottom: 4%;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #ff6666;
+    color: ghostwhite;
+   }
+   
+   .bad span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+   }
+   
+   .bad:hover span {
+    color: black;
+   }
+   
+   .bad::before,
+   .bad::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   }
+   
+   .bad::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   
+   .bad:hover::before {
+    transform: translate3d(100%, 0, 0);
+   }
+   
+

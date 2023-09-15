@@ -1,0 +1,101 @@
+*{
+    
+    margin: 0px;
+    padding: 0px;
+    direction: rtl;
+    font-family: 'iranyekan';
+    box-sizing: border-box;
+    border: 0;
+    overflow: hidden;
+
+}
+html{
+    height: 100%;
+}
+body{
+    background-image: url(src/bbbb.svg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c9c9c9;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a6a6a6;
+}
+.buttonn {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #3eba5d;
+  background-color: #46d66a;
+}
+
+.buttonn, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.buttonn .button__text {
+  transform: translateX(-100px);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.buttonn .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #34974d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonn .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.buttonn:hover {
+  background: #34974d;
+}
+
+.buttonn:hover .button__text {
+  color: transparent;
+}
+
+.buttonn:hover .button__icon {
+  width: 300px;
+  transform: translateX(0px);
+}
+
+.buttonn:active .button__icon {
+  background-color: #2e8644;
+}
+
+.buttonn:active {
+  border: 1px solid #2e8644;
+}
